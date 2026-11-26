@@ -17,6 +17,18 @@
         align-items: center;
         justify-content: center;
       }
+      /* shown while the world is being made, before the first frame: the page can do nothing else for a couple of seconds */
+      #loading {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4fae84;
+        font: 600 15px/1 ui-monospace, Consolas, monospace;
+        letter-spacing: 0.35em;
+        pointer-events: none;
+      }
       canvas {
         image-rendering: pixelated;
         image-rendering: crisp-edges;
@@ -25,9 +37,10 @@
         outline: none;
       }
     </style>
-    <script type="module" crossorigin src="./assets/index-I1E_L_53.js"></script>
+    <script type="module" crossorigin src="./assets/index-D9BO5GSb.js"></script>
   </head>
   <body>
+    <div id="loading">LOADING</div>
     <canvas id="screen" tabindex="0"></canvas>
   </body>
 </html>
